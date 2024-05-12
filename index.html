@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVolution 2024 Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                <!-- <img src="./9019777.jpg" alt="bg-img" class="bgImg"> -->
+                <h3 class="text-white"><span class="blue-text">Tech</span>Volution 2024</h3>
+                <p class="text-white" style="font-size: larger;">Unveiling Innovation, Connecting Minds, and Shaping Tomorrow<br></p>
+                <div class="card">
+                    <h5 class="text-center mb-4">Registration Form</h5>
+                    <form class="form-card" id="form-card" action="/script.js" onsubmit="myFunc()">
+                        <!-- <div style="text-align: left; font-style: initial;">bPersonal Information</div> -->
+                        <div class="row justify-content-between text-left" style="margin-bottom: 8px;">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">First name<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="" required="required"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Last name<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="" required="required"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Date of Birth<span class="text-danger"> *</span></label> <input type="date" id="dob" name="dob" placeholder=""
+                                 onblur="" pattern="\d{1,2}\/\d{1,2}\/\d{4}" 
+                                required="required"> </div>          
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <label>Gender<span class="text-danger"> *</span></label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required="required">
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female" required="required">
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="non-binary" value="non-binary" required="required">
+                                    <label class="form-check-label" for="non-binary">Non-Binary</label>
+                                </div>
+                            </div>           
+                        </div>
+
+                        <div class="row justify-content-between text-left" style="margin-bottom: 8px;">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email Address<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" placeholder="" onblur="" required="required"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> <input type="text" id="phn" name="phn" placeholder="" onblur=""> </div>
+                        </div>
+
+                        <div class="row justify-content-between text-left"  style="margin-bottom: 8px;">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Street Address<span class="text-danger"> *</span></label> <input type="text" id="address1" name="address1" placeholder="" onblur="" required="required"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">City<span class="text-danger"> *</span></label> <input type="text" id="city" name="city" placeholder="" onblur="" required="required"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> 
+                                <label for="state" class="form-control-label px-3">State<span class="text-danger"> *</span></label>
+                                    <select name="state" id="state">
+                                        <option value="Jharkhand">Jharkhand</option>
+                                        <option value="West Bengal">West Bengal</option>
+                                        <option value="Tamil Nadu">Tamil Nadu</option>
+                                        <option value="Maharashtra">Maharashtra</option>
+                                        <option value="Rajasthan">Rajasthan</option>
+                                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                        <option value="Haryana">Haryana</option>
+                                        <option value="Punjab">Punjab</option>
+                                        <option value="Bihar">Bihar</option>
+                                        <option value="Chattisgarh">Chattisgarh</option>
+                                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                        <option value="Gujarat">Gujarat</option>
+                                        <option value="Goa">Goa</option>
+                                        <option value="Sikkim">Sikkim</option>
+                                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                        <option value="Odisha">Odisha</option>
+                                        <option value="Kerala">Kerala</option>
+                                        <option value="Karnataka">Karnataka</option>
+                                        <option value="Assam">Assam</option>
+                                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                        <option value="Telangana">Telangana</option>
+                                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                        <option value="Manipur">Manipur</option>
+                                        <option value="Meghalaya">Meghalaya</option>
+                                        <option value="Mizoram">Mizoram</option>
+                                        <option value="Nagaland">Nagaland</option>
+                                        <option value="Tripura">Tripura</option>
+                                        <option value="Uttarakhand">Uttarakhand</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Chandigarh">Chandigarh</option>
+                                    </select>
+                            </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Zip Code<span class="text-danger"> *</span></label> <input type="text" id="zip" name="zip" placeholder="" onblur="" required="required">  </div>
+                        </div>
+
+                        <div class="row justify-content-between text-left"  style="margin-bottom: 8px;">
+                            <div class="form-group col-12 flex-column d-flex"> 
+                                <label for="preferences" class="form-control-label px-3">Event Preferences</label>
+                                <select name="preferences" id="preferences">
+                                    <option value="Conference">Conference</option>
+                                    <option value="Panel Discussion">Panel Discussion</option>
+                                    <option value="Seminar">Seminar</option>
+                                    <option value="Exhibition">Exhibition</option>
+                                    <option value="Training Session">Training Session</option>
+                                </select>
+                                <!-- <input type="text" id="preferences" name="preferences" placeholder="" onblur="validate(6)">  -->
+                            </div>
+                            <div class="form-group col-12 flex-column d-flex"> 
+                                <label for="dr" class="form-control-label px-3">Dietary Restrictions</label> 
+                                <textarea name="dr" id="dr" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="form-group col-12 flex-column d-flex"> 
+                                <label for="tshirt" class="form-control-label px-3">T-shirt size</label> 
+                                <select name="tshirt" id="tshirt">
+                                    <option value="xs">XS</option>
+                                    <option value="s">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l">L</option>
+                                    <option value="xl">XL</option>
+                                    <option value="xxl">XXL</option>
+                                </select>
+                            </div>
+
+                        </div>
+                     
+                        <div class="row">
+                            <div class="form-group col-sm-6"> 
+                                <button type="submit" class="btn-block bg-info text-white">Register</button> 
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2024 Copyright: 
+            <a class="text-white" href="/">TechVolution 2024</a>
+          </div>
+    </div>
+
+
+
+
+
+    <!-- used old -->
+    <!-- <div class="container">
+        <h2 class="heading">TechVolution 2024 Registration Form</h2>
+        <form id="registrationForm">
+            Personal Information Section
+            <h3>Personal Information</h3>
+            <div class="form-group">
+                <label for="fullName">Name</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required
+                    placeholder="Write Your Full Name">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+
+            Contact Details Section
+
+            <h3>Contact Details</h3>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required
+                    placeholder="Write Your Email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" class="form-control" id="phone" name="phone" required
+                    placeholder="Provide Your active Number">
+            </div>
+
+            Address Section
+            <h3>Address</h3>
+            <div class="form-group">
+                <label for="streetAddress">Building Name/House No.</label>
+                <input type="text" class="form-control" id="streetAddress" name="streetAddress" required>
+            </div>
+            <div class="form-group">
+                <label for="streetAddress">Street Address</label>
+                <input type="text" class="form-control" id="streetAddress" name="streetAddress" required>
+            </div>
+            <div class="form-group">
+                <label for="streetAddress">Populer Nearby Place(optional) </label>
+                <input type="text" class="form-control" id="streetAddress" name="streetAddress">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" name="city" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="state">State</label>
+                    <select id="state" class="form-control" name="state" required>
+                        <option value="">Choose</option>
+                        <option value="">Jharkhand</option>
+                        <option value="">West Bengal</option>
+                        <option value="">Tamil Nadu</option>
+                        <option value="">Maharashtra</option>
+                        <option value="">Rajasthan</option>
+                        <option value="">Urrar Pradesh</option>
+                        <option value="">Haryana</option>
+                        <option value="">Punjab</option>
+                        <option value="">Bihar</option>
+                        <option value="">Chattisgarh</option>
+                        <option value="">Andra Pradesh</option>
+                        <option value="">Gujrat</option>
+                        <option value="">Goa</option>
+                        <option value="">Sikkim</option>
+                        <option value="">Arunachal Pradesh</option>
+
+                        Add options for states here
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="zip">Postal Code</label>
+                    <input type="number" class="form-control" id="zip" name="zip" required>
+                </div>
+            </div>
+
+            Additional Information Section
+            <h3>Additional Information</h3>
+            <div class="form-group">
+                <label for="eventPreferences">Event Preferences</label>
+                <select id="eventPreferences" class="form-control" name="eventPreferences" required>
+                    <option value="1">choose</option>
+                    <option value="2">sdf</option>
+                    <option value="4">xyz</option>
+                    <option value="3">ngr</option>
+                    option me kya dale smjh nhi aarha tha
+ 
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dietaryRestrictions">Dietary Restrictions</label>
+                <textarea class="form-control" id="dietaryRestrictions" name="dietaryRestrictions" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tshirtSize">T-shirt Size</label>
+                <select id="tshirtSize" class="form-control" name="tshirtSize" required>
+                    <option value="">Choose...</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="XXXL">XXXL</option>
+
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="background-color: rgb(196, 22, 22);">Register</button>
+        </form>
+    </div> -->
+
+<script src="script.js"></script>
+</body>
+
+</html>
